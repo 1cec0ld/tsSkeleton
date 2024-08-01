@@ -12,11 +12,5 @@ services:
       - ./nodemon.json:/home/node/app/nodemon.json
     env_file: .env
     container_name: app
-    expose:
-      - '3000'
     ports:
       - '3060:3000'
-
-networks:
-  backend:
-    driver: bridge

@@ -15,10 +15,10 @@ RUN apt-get upgrade -y
 RUN npm install -g npm@latest
 
 # Mount the network share (mdlabs.local/share) to the container with mount-cifs with read and write permissions
-RUN apt-get install -y cifs-utils
-RUN mkdir -p /mnt/reqs
-RUN mkdir -p /mnt/utilities
-RUN mkdir -p /mnt/accessioning
+#RUN apt-get install -y cifs-utils
+#RUN mkdir -p /mnt/reqs
+#RUN mkdir -p /mnt/utilities
+#RUN mkdir -p /mnt/accessioning
 
 COPY package*.json .
 
