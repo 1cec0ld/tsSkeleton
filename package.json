@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_PATH=./build node build/index.js",
+    "start": "/bin/bash ./run.sh",
     "build": "tsc -p .",
-    "dev": "nodemon src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Author Name",

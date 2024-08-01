@@ -4,13 +4,13 @@ services:
     build:
       context: .
       args:
-        NPM_COMMAND: dev
         NPM_OMIT: ''
       dockerfile: Dockerfile
       target: base
     volumes:
       - ./src:/home/node/app/src
       - ./nodemon.json:/home/node/app/nodemon.json
+    env_file: .env
     container_name: app
     expose:
       - '3000'
